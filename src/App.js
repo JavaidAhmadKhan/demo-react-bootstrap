@@ -4,9 +4,9 @@ import { Accordion, Col, Container, Row } from "react-bootstrap";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 
-import "./App.css";
-import BasicExample from "./CardsCom";
+import CardsContainer from "./components/CardComponent/CardsContainer";
 import NavigationBar from "./Navbar";
+import ContactForm from "./components/Form/Form.jsx";
 
 export default function App() {
   const [show, setShow] = useState(true);
@@ -36,6 +36,7 @@ export default function App() {
           <Col xs lg="3">
             <img
               src="https://ayana-powerv2.vercel.app/static/media/vendor_code_conduct.6d609271df2acffb47eb.png"
+              // eslint-disable-next-line no-template-curly-in-string
               className="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
               alt=""
             />
@@ -81,7 +82,7 @@ export default function App() {
         </Accordion.Item>
       </Accordion>
 
-      <BasicExample />
+      <CardsContainer />
       <Alert show={show} variant="success">
         <Alert.Heading>How's it going?!</Alert.Heading>
         <p>
@@ -98,6 +99,7 @@ export default function App() {
       </Alert>
 
       {!show && <Button onClick={() => setShow(true)}>Show Alert</Button>}
+      <ContactForm />
     </div>
   );
 }

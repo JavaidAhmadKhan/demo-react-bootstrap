@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
-import './cardcontainer.css'
+import './cardcontainer.scss'
 
-function BasicExample() {
+function CardsContainer() {
     return (
         <div className='cardContainer'>
             <Card style={{ width: '24rem', margin: "10px" }}>
@@ -109,4 +109,4 @@ function BasicExample() {
     );
 }
 
-export default BasicExample;
+export default CardsContainer;
