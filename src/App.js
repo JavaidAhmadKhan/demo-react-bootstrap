@@ -38,7 +38,7 @@ export default function App() {
               src="https://ayana-powerv2.vercel.app/static/media/vendor_code_conduct.6d609271df2acffb47eb.png"
               // eslint-disable-next-line no-template-curly-in-string
               className="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
-              alt=""
+              alt="project1" height={300} width={300}
             />
           </Col>
         </Row>
